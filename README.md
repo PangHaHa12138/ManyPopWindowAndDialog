@@ -2,8 +2,10 @@
 a android demo for Popwindow and dialog  各种popwindow和dialog弹窗自定义以及简单写法，非常实用
 可以自动定制布局，也可以傻瓜式代码生成
 final BottomPopupOption bottomPopupOption = new BottomPopupOption(MainActivity.this);
+
 bottomPopupOption.setItemText("拍照","相册");//这是条目
 bottomPopupOption.showPopupWindow();
+
 bottomPopupOption.setItemClickListener(new BottomPopupOption.onPopupWindowItemClickListener() {
 @Override
 public void onItemClick(int position) {
