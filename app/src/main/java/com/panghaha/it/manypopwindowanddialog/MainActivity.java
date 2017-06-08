@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         bottomDialog = new BottomDialog(MainActivity.this,R.layout.dialog_layout,new int[]{R.id.dialog_cancel,R.id.dialog_sure});
         updataDialog = new UpdataDialog(MainActivity.this,R.layout.dialog_updataversion,
-                new int[]{R.id.dialog_sure});
+                new int[]{R.id.dialog_sure,R.id.quxiao});
         pop1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -175,6 +175,11 @@ public class MainActivity extends AppCompatActivity {
                             case R.id.dialog_sure:
 
                                 Toast.makeText(MainActivity.this,"开启下载更新...",Toast.LENGTH_SHORT).show();
+                                updataDialog.dismiss();
+                                break;
+
+                            case R.id.quxiao:
+                                Toast.makeText(MainActivity.this,"取消更新...",Toast.LENGTH_SHORT).show();
                                 updataDialog.dismiss();
                                 break;
                         }

@@ -1,50 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/roctet_bg"
-    android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:layout_height="wrap_content">
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/quxiao"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="190dp"
+        android:src="@drawable/center2x"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roctet_bng"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/updataversion_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="100dp"
         android:text="升级到新版本"
+        android:layout_marginLeft="-10dp"
         android:textColor="@color/black"
-        android:textSize="18sp"/>
+        android:textSize="14sp"/>
     <TextView
         android:id="@+id/updataversioncode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="-10dp"
         android:text="2.0.1"
         android:textColor="@color/black"
-        android:textSize="16sp"
-        android:layout_marginBottom="20dp"/>
+        android:textSize="13sp"
+        android:layout_marginBottom="10dp"/>
     <TextView
+
         android:id="@+id/updataversion_msg"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginLeft="-5dp"
         android:layout_marginRight="5dp"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_height="70dp"
         android:text="1.还有这种操作？\n2.真的有这种操作！\n3.我有一句吗卖批不知当讲不当讲\n4.当然是选择原谅她了"
         android:textColor="@color/black_hehe"
-        android:textSize="13sp" />
+        android:textSize="10sp" />
 
-    <!--<View-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="1dp"-->
-        <!--android:background="#cecece" />-->
+
 
     <LinearLayout
         android:id="@+id/dialog_sure"
         android:clickable="true"
-        android:layout_marginTop="10dp"
-        android:layout_width="240dp"
-        android:layout_height="42dp"
+        android:layout_marginLeft="-6dp"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
         android:orientation="horizontal"
         android:background="@drawable/updataversionbut_bg">
 
@@ -55,23 +67,10 @@
             android:gravity="center"
             android:text="立即更新"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="13sp" />
 
-        <!--<View-->
-            <!--android:layout_width="1dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:background="#cecece" />-->
 
-        <!--<TextView-->
-            <!--android:id="@+id/dialog_cancel"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="1"-->
-            <!--android:gravity="center"-->
-            <!--android:background="@color/updataversionbut"-->
-            <!--android:text="@string/updatano"-->
-            <!--android:textColor="@color/white"-->
-            <!--android:textSize="20sp" />-->
     </LinearLayout>
 
 </LinearLayout>
+</RelativeLayout>

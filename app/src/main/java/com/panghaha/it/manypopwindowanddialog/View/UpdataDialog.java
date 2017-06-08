@@ -42,7 +42,7 @@ public class UpdataDialog extends Dialog implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Window window = getWindow();
-        window.setGravity(Gravity.CENTER); // 此处可以设置dialog显示的位置为居中
+        window.setGravity(Gravity.RIGHT); // 此处可以设置dialog显示的位置为居中
         window.setWindowAnimations(R.style.bottom_menu_animation); // 添加动画效果
         setContentView(layoutResID);
         // 宽度全屏
