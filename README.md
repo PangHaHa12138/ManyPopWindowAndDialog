@@ -1,6 +1,6 @@
 # ManyPopWindowAndDialog
 a android demo for Popwindow and dialog  各种popwindow和dialog弹窗自定义以及简单写法，
-
+(http://blog.csdn.net/panghaha12138/article/details/72922071)
 非常实用
 可以自动定制布局，也可以傻瓜式代码生成
 ```
