@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic_bg2x">
+
+    <include layout="@layout/activity_qiehuan_toobar"/>
+
+    <RelativeLayout
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shen">
+            <RelativeLayout
+                android:id="@+id/day"
+                android:clickable="true"
+                android:background="@color/touming"
+                android:orientation="horizontal"
+                android:layout_width="80dp"
+                android:layout_height="25dp">
+                <TextView
+                    android:id="@+id/day_text"
+                    android:layout_centerInParent="true"
+                    android:text="日"
+                    android:textColor="@color/qian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/shu1"
+                android:visibility="gone"
+                android:background="@color/qian"
+                android:layout_width="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="15dp"/>
+
+            <RelativeLayout
+                android:id="@+id/month"
+                android:clickable="true"
+                android:background="@drawable/qian"
+                android:orientation="horizontal"
+                android:layout_width="80dp"
+                android:layout_height="25dp">
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/month_text"
+                    android:text="月"
+                    android:textColor="@color/shen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/shu2"
+                android:visibility="gone"
+                android:background="@color/qian"
+                android:layout_width="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="15dp"/>
+            <RelativeLayout
+                android:id="@+id/year"
+                android:clickable="true"
+                android:background="@color/touming"
+                android:orientation="horizontal"
+                android:layout_width="80dp"
+                android:layout_height="25dp">
+                <TextView
+                    android:id="@+id/year_text"
+                    android:layout_centerInParent="true"
+                    android:text="年"
+                    android:textColor="@color/qian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/shu3"
+                android:background="@color/qian"
+                android:layout_width="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="15dp"/>
+            <RelativeLayout
+                android:id="@+id/jidu"
+                android:clickable="true"
+                android:background="@color/touming"
+                android:orientation="horizontal"
+                android:layout_width="80dp"
+                android:layout_height="25dp">
+                <TextView
+                    android:id="@+id/jidu_text"
+                    android:layout_centerInParent="true"
+                    android:text="季度"
+                    android:textColor="@color/qian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/jiatu"
+        android:src="@drawable/zhuzhuang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_toobar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/titbar_color"
+    android:minHeight="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tuoyuanhuan">
+            <RelativeLayout
+                android:id="@+id/acceptjob_tag"
+                android:clickable="true"
+                android:background="@drawable/add_renwu_bg"
+                android:orientation="horizontal"
+                android:layout_width="80dp"
+                android:layout_height="25dp">
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/acceptjob_text"
+                    android:text="代办统计"
+                    android:textColor="@color/left_menu_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/sendjob_tag"
+                android:clickable="true"
+                android:layout_toRightOf="@+id/acceptjob_tag"
+                android:background="@color/touming"
+                android:orientation="horizontal"
+                android:layout_width="80dp"
+                android:layout_height="25dp">
+                <TextView
+                    android:id="@+id/sendjob_text"
+                    android:layout_centerInParent="true"
+                    android:text="下发统计"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/chosemodelview"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/chosemodelname"
+            android:text="柱状图"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/btn_xiala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

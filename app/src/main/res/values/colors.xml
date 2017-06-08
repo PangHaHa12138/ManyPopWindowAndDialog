@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="titbar_color">#0589ba</color>
+    <color name="touming">#00000000</color>
+    <color name="button">#fff</color>
+    <color name="left_menu_font">#142f3d</color>
+    <color name="shen">#007ba7</color>
+    <color name="qian">#aae8f7</color>
+    <color name="list_divider_line">#545454</color>
+    <color name="black_hehe">#8e8e8e</color>
+    <color name="green_normal">#37C000</color>
+    <color name="gray">#545454</color>
+    <color name="black">#295775</color>
+    <color name="updataversionbut">#00c3e8</color>
+
+</resources>
